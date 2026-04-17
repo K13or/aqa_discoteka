@@ -12,5 +12,5 @@ def test_api_cases(api_client, case):
 
     assert response.status_code == case["expected_status"]
 
-    if "expected_text" in case:
+    if case["expected_text"]:
         assert case["expected_text"] in response.text

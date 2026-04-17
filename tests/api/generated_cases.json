@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Homepage returns 200",
+    "path": "/",
+    "expected_status": 200,
+    "expected_text": null
+  },
+  {
+    "name": "Homepage contains 'Example Domain'",
+    "path": "/",
+    "expected_status": 200,
+    "expected_text": "Example Domain"
+  },
+  {
+    "name": "Nonexistent page returns 404",
+    "path": "/nonexistent-page",
+    "expected_status": 404,
+    "expected_text": null
+  }
+]
