@@ -23,9 +23,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run API smoke tests
+      - name: Run API tests
         env:
-          BASE_URL: https://example.com
+          BASE_URL: ${{ secrets.BASE_URL }}
         run: |
           pytest tests/api -q --junitxml=pytest-report.xml
 
